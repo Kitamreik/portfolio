@@ -2,7 +2,6 @@ require('dotenv').config();
 //require('./config/connection');
 //require('./config/authStrategy');
 
-
 const express = require('express');
 const path = require('node:path');
 const helmet = require('helmet');
@@ -41,7 +40,8 @@ app.use(passport.session());
 // Routing Paths
 
 app.get('/', (request, response, next) => {
-    response.status(200).json({success: {message: "Index successful"}, statusCode: 200});
+    //response.status(200).json({success: {message: "Index successful"}, statusCode: 200});
+    response.render('pages/index')
 });
 
 app.get('/about', (request, response, next)  => {
