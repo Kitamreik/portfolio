@@ -16,6 +16,8 @@ const PORT = 4200;
 // const PORT = process.env.PORT || 4200;
 
 // Define the Routing Variable 
+const indexRoutes = require('./routes/indexRoutes');
+//const authRoutes = require('./routes/authRoutes');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname + '/views'));
@@ -38,27 +40,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routing Paths
+//app.use('/admin/', authRoutes);
+app.use('/portfolio/', indexRoutes);
 
 app.get('/', (request, response, next) => {
     //response.status(200).json({success: {message: "Index successful"}, statusCode: 200});
     response.render('pages/index')
-});
-
-app.get('/about', (request, response, next)  => {
-    response.status(200).json({success: {message: "About page successful"}, statusCode: 200});
-});
-
-app.get('/contact', (request, response, next)  => {
-    response.status(200).json({success: {message: "Contact page successful"}, statusCode: 200});
-});
-
-
-app.get('/projects', (request, response, next)  => {
-    response.status(200).json({success: {message: "Project page successful"}, statusCode: 200});
-});
-
-app.get('/resume', (request, response, next)  => {
-    response.status(200).json({success: {message: "Resume page successful"}, statusCode: 200});
 });
 
 //Server
