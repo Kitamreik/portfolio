@@ -48,6 +48,11 @@ app.get('/', (request, response, next) => {
     response.render('pages/index')
 });
 
+app.get('/test', (request, response, next) => {
+    //response.status(200).json({success: {message: "Index successful"}, statusCode: 200});
+    response.render('pages/test')
+});
+
 //Server
 app.listen(PORT, () => {
     console.log(`The server is listening on port ${PORT}`);
