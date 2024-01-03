@@ -50,7 +50,7 @@ app.get('/', (request, response, next) => {
 
 app.get('/test', (request, response, next) => {
     //response.status(200).json({success: {message: "Index successful"}, statusCode: 200});
-    response.render('pages/test')
+    response.render('pages/inspiration')
 });
 
 //Server
