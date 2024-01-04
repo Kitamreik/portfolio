@@ -50,7 +50,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 50;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -3945,6 +3945,8 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  border-bottom: solid;
+  border-color: var(--bs-dark);
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -10880,6 +10882,7 @@ p.lead {
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
+  
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -10902,6 +10905,9 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    border-bottom: solid;
+    border-right: solid;
+  border-color: var(--bs-dark);
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -10947,7 +10953,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: var(--bs-blue);
 }
 
 .dev-icons {
@@ -10997,13 +11003,132 @@ hr {
     margin: auto;
     padding: 5px;
     text-align: center;
+    max-width: 300px;
+    border:solid;
+    background-color: var(--bs-pink);
 }
 
 .form-container {
-    width: 50%;
-    margin: auto;
-    padding: 10px;
+    width: 95%;
+    margin: 20px;
+    right: 0;
     text-align: center;
-    color: var(--rich-black);
     /* margin-right: 5em; */
+}
+
+.form-image {
+  background-image: url("../img/mountains.jpg");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: var(--bs-black);
+  color: var(--bs-black);
+}
+
+.project-background-img {
+  background-image: url("../img/clouds.png");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: var(--bs-black);
+  color: var(--bs-black);
+}
+
+/* image config */
+.photo-image {
+  width: 35%;
+  padding: 0%;
+  height: 20%;
+}
+
+.photo-image-mini {
+  width: 20%;
+  padding: 0%;
+  height: 10%;
+}
+
+.photo-image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 0%;
+  height: 15%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0;
+  transition: 0.3s;
+  width: 60%;
+  max-width: 300px;
+  padding: 2.5%;
+  border-radius: 5px;
+  align-content: center;
+  display: inline-grid;
+  border-style: solid;
+  border-color: var(--bs-blue);
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: all 0.25s ease-in-out;
+}
+
+.link-styling {
+  padding: 0.2%;
+  color: var(--bs-blue);
+}
+
+.link-styling a:link {
+  color: var(--bs-black);
+  text-decoration: none;
+}
+
+.link-styling a:visited {
+  color: var(--bs-black);
+  text-decoration: none;
+}
+
+.link-styling a:hover {
+  color: var(--bs-cyan);
+  font-weight: bold;
+}
+
+
+.link-styling a:active {
+  color: var(--bs-warning);
+  font-weight: bold;
+} 
+
+.nav-button {
+  background-color: var(--bs-blue);
+}
+
+.footer-button {
+  background-color: var(--bs-pink);
+}
+
+.bs-info {
+  background-color: var(--bs-info);
+}
+.bs-yellow {
+  background-color: var(--bs-yellow);
+}
+
+.bs-cyan {
+  background-color: var(--bs-cyan);
+}
+.bs-gray {
+  background-color: var(--bs-gray);
+}
+
+.bs-pink{
+  background-color: var(--bs-pink);
+}
+
+.text-primary-pink {
+  color: var(--bs-pink);
 }

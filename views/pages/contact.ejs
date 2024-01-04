@@ -4,10 +4,37 @@
 <div>
     <section>
         <h1>Contact Me</h1>
-    </section>
-    <section>
         <p>I look forward to connecting with you further! Please fill your contact information below and I will get back to you as soon as possible.</p>
     </section>
+    <section class="form-image ">
+        <br><br>
+        <form action="#" class="mini-container-form">
+            <legend></legend>
+            <fieldset>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="2" required/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" minlength="2" required />
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" minlength="10" required/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="reason">Reason:</label>
+                <input type="text" name="reason" id="reason" placeholder="Reason" required/>
+            </fieldset>
+            <br>
+            <input type="submit" value="Take it awayyy!"  link-styling" onclick="returnHomeET()" />
+        </form>
+    </section>
+    
     <!-- Much like a company website page, you’ll want to include as many contact options as possible. If you have a professional phone number, use it. However, if you feel uncomfortable posting your cell phone number online, you can easily replace this with your email address, LinkedIn page, or any other links to professional social media profiles you’ve established. -->
 </div>
+<br><br>
 <%- include('../partials/footer') %> 
