@@ -2,16 +2,17 @@
     <title>Projects Page!</title>
 <%- include('../partials/nav') %> 
 
-<div class="container-fluid p-0">
+<div class="container-fluid p-0 project-background-img">
     <section class="resume-section" id="projects">
-        <div class="resume-section-content">
-        <h2>Projects Page!</h2>
+        <div class="resume-section-content ">
+        <h2 class="text-primary-pink">Projects Page!</h2>
         <!-- start loop -->
         <% for (data of data) { %>
         <div class="card">
             <a href="/portfolio/<%- data.id %>"></a>
             <p><%- data.title%></p>
             <p><%- data.reason %></p>
+            <p><%- data.technologies %></p>
             <hr>
             <a href="<%- data.deployed %>" class="link-styling"><p><%- data.deployed %></p></a>
             <a href="<%- data.github %>" class="link-styling"><p><%- data.github %></p></a>
