@@ -10947,7 +10947,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: var(--bs-blue);
 }
 
 .dev-icons {
@@ -11025,7 +11025,9 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
+  padding: 0%;
+  height: 15%;
 }
 
 .card {
@@ -11037,10 +11039,46 @@ hr {
   border-radius: 5px;
   align-content: center;
   display: inline-grid;
+  border-style: solid;
+  border-color: var(--bs-blue);
   flex-grow: 1;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: all 0.25s ease-in-out;
+}
+
+.link-styling {
+  padding: 0.2%;
+  color: var(--bs-blue);
+}
+
+.link-styling a:link {
+  color: var(--bs-black);
+  text-decoration: none;
+}
+
+.link-styling a:visited {
+  color: var(--bs-black);
+  text-decoration: none;
+}
+
+.link-styling a:hover {
+  color: var(--bs-cyan);
+  font-weight: bold;
+}
+
+
+.link-styling a:active {
+  color: var(--bs-warning);
+  font-weight: bold;
+} 
+
+.nav-button {
+  background-color: var(--bs-blue);
+}
+
+.footer-button {
+  background-color: var(--bs-pink);
 }
 
 .bs-info {
@@ -11048,4 +11086,19 @@ hr {
 }
 .bs-yellow {
   background-color: var(--bs-yellow);
+}
+
+.bs-cyan {
+  background-color: var(--bs-cyan);
+}
+.bs-gray {
+  background-color: var(--bs-gray);
+}
+
+.bs-pink{
+  background-color: var(--bs-pink);
+}
+
+.text-primary-pink {
+  color: var(--bs-pink);
 }
