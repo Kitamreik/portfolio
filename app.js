@@ -44,13 +44,7 @@ app.use(passport.session());
 app.use('/portfolio/', indexRoutes);
 
 app.get('/', (request, response, next) => {
-    //response.status(200).json({success: {message: "Index successful"}, statusCode: 200});
     response.render('pages/index')
-});
-
-app.get('/test', (request, response, next) => {
-    //response.status(200).json({success: {message: "Index successful"}, statusCode: 200});
-    response.render('pages/inspiration')
 });
 
 //Server

@@ -17,12 +17,14 @@ Many coders include links to projects housed on GitHub or other development plat
     <section>
         <!-- start loop -->
         <% for (data of data) { %>
-        <div>
+        <div class="card">
             <a href="/portfolio/<%- data.id %>"></a>
             <p><%- data.title%></p>
             <p><%- data.author %></p>
             <p><%- data.reason %></p>
             <hr>
+            <p><%- data.deployed %></p>
+            <p><%- data.github %></p>
         </div>
         <!-- end loop -->
         <% } %>

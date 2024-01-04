@@ -4,7 +4,9 @@ const project = [
         title: "TJ Practitioner Directory- Front End, Version 1",
         author: "Kit Fenrir Amreik (they/she)",
         audience: "general",
-        reason: "This is for the deployment of my static sites/front end of the CodeSquad personal project."
+        reason: "This is for the deployment of my static sites/front end of the CodeSquad personal project.",
+        deployed: "",
+        github: "https://github.com/Kitamreik/tj-practitioner-directory-frontend"
     },
     {
         id: 2,
@@ -25,8 +27,9 @@ const project = [
         title: "Transformative Justice Practitioner Directory, Version 3",
         author: "Kit Fenrir Amreik (they/she)",
         audience: "general/specifically for assistance",
-        reason: "The premise of this application is to create a visual network of Practitioners across the United States showcased via a map interface and being able to click on the marker that the person has to find their information. In turn, this will allow the user to be able to reach out to a trained & mentored Practitioner for assistance in conflict resolution. Version 2 of the app is deployed through cyclic. The link is here: https://tj-practitioner-directory.cyclic.app/. This is derived from the Version 1 deployment of CodeSquad personal project through Heroku; the Front-End is located here: https://github.com/Kitamreik/tj-practitioner-directory-frontend"
+        reason: "The premise of this application is to create a visual network of Practitioners across the United States showcased via a map interface and being able to click on the marker that the person has to find their information. In turn, this will allow the user to be able to reach out to a trained & mentored Practitioner for assistance in conflict resolution." 
     },
+    //Version 2 of the app is deployed through cyclic. The link is here: https://tj-practitioner-directory.cyclic.app/. This is derived from the Version 1 deployment of CodeSquad personal project through Heroku; the Front-End is located here: https://github.com/Kitamreik/tj-practitioner-directory-frontend"
     {
         id: 5,
         title: "Friend App",
