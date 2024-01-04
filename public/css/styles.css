@@ -11000,11 +11000,13 @@ hr {
 }
 
 .form-container {
-    width: 50%;
+    width: 95%;
     margin: auto;
     padding: 10px;
     text-align: center;
-    color: var(--rich-black);
+    background-image: url("../img/mountains.jpg");
+    background-color: var(--bs-black);
+    color: var(--bs-gray-dark);
     /* margin-right: 5em; */
 }
 
