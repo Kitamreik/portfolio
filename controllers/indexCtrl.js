@@ -1,5 +1,15 @@
 const projectData = require('../data/data');
 
+const newIndex = async (request, response, next) => {
+    try {
+        await 
+        response.render('pages/index-v2')
+        } catch (err) {
+        response.status(400)
+            .json({ error: { message: "Something went wrong with getting to the resource!" }, statusCode: 400 });
+        }
+};
+
 const contactPage = async (request, response, next) => {
     try {
         await 
@@ -59,4 +69,4 @@ const skillPage = async (request, response, next) => {
         }
 };
 
-module.exports = {contactPage, projectPage, resumePage, eduPage, expPage, skillPage};
+module.exports = {contactPage, projectPage, resumePage, eduPage, expPage, skillPage, newIndex};

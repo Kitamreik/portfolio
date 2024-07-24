@@ -44,7 +44,11 @@ app.use(passport.session());
 app.use('/portfolio/', indexRoutes);
 
 app.get('/', (request, response, next) => {
-    response.render('pages/index')
+    response.redirect('/portfolio/home')
+});
+
+app.get('/index-v1', (request, response, next) => {
+  response.render('pages/index')
 });
 
 //Server
