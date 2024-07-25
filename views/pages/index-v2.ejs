@@ -3,15 +3,17 @@
 <%- include('../partials/nav') -%> 
 
 <!-- Page Content-->
-<aside><i>this is version two, delete this line of code when done</i></aside>
-<div class="container-fluid p-0">
+<div class="container-fluid p-0 gradient">
      <!-- About-->
      <section class="resume-section" id="about">
         <div class="resume-section-content">
-            <h1 class="mb-0">
-                Kit Fenrir
-                <span class="text-primary-pink">Amreik</span>
-            </h1>
+            <div class="contrast-blue">
+                <i class="fa-solid fa-web-awesome edu-icons"></i>
+                <h1 class="mb-0">
+                    Kit Fenrir
+                    <span class="text-primary-pink">Amreik</span>
+                </h1>
+            </div>
             <div class="subheading mb-5">
                 Denver, CO 80247 · (857) 261-7596 ·
                 <a href="mailto:kidamreik@gmail.com" class="text-primary-pink link-styling">kitdamreik@gmail.com</a>
@@ -22,13 +24,13 @@
                 <br>
                 <p class="lead mb-5">Being a non-binary Black trans woman, where there only 3% of women employed in the tech sector that fall into this lived experience, I would like to attract other people of the global majority and assist them in succeeding and achieving their goals is the primary drive of developer advocacy and activism that I employ. Care is essential for a thriving and organically growing community and culture; additionally, commitment to communication and continuous improvement bolsters morale, connectivity, and growth.</p>
             </span>
+            <span>
+                <%- include('../partials/exp') %>
+            </span>
            <span>
-            <%- include('../partials/skills.ejs') %>
+            <%- include('../partials/skills') %>
            </span>
-            <!-- add project and exp snippet here -->
     </div>
-    <!--  For example, a strong "About Me" section might include a professional headshot, a short bio, values and professional strengths, and relevant personal experiences. "About Me" sections should help you create your brand, not distract from your professional talents.Instead, consider other characteristics such as your professional narrative, what makes you unique compared to other developers in your field, how you’ve managed (or rescued) projects, and how you’ve personally fostered success in every initiative. In short, don’t miss an opportunity to self-promote yourself. -->
-    
 </section>
 </div>
 <hr class="m-0" />

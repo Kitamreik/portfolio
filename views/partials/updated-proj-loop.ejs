@@ -1,0 +1,29 @@
+<!-- Page Content-->
+<span class="link-styling-footer row card-space">
+    <!-- start loop -->
+    <% for (data of newData) { %>
+        <div class="card gradient">
+            <a href="/portfolio/<%- data.id %>"></a>
+            <p>Title: <%- data.title%></p>
+            <p>Audience: <%- data.audience %></p>
+            <p>Reason: <%- data.reason %></p>
+            <p>Tech Stack: <%- data.technologies %></p>
+            <hr>
+            <a href="<%- data.deployed %>" class="link-styling"><p><%- data.deployed %></p></a>
+            <a href="<%- data.github %>" class="link-styling"><p><%- data.github %></p></a>
+        </div>
+        <!-- end loop -->
+         <br>
+        <% } %>
+        <div class="card gradient">
+            <a href="/portfolio/10"><p>Title: Complete Node Podcast</p></a>
+            <p>Audience: students/self-learning and development</p>
+            <p>Reason: Refactor the Node.js Podcast Index API to use in JSON based back end environment successfully using advanced back end techniques such as crypto detection, the node fetch commands and created six files only for ease and comprehension.</p>
+            <p>Tech Stack: Javascript</p>
+            <hr>
+            <a href="https://github.com/Kitamreik/complete-node-pod" class="link-styling"><p>https://github.com/Kitamreik/complete-node-pod</p></a>
+        </div>
+        <br>
+</span>
+
+        

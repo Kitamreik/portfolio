@@ -55,10 +55,17 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #32CBFF;
+  /* color: #212529; */
+  /*color: #0D1B2A; */ /* from PP */
+  color: #2C2C34;
+  background-color: #32CBFF; 
+  background-image: linear-gradient(#32CBFF, #D9D9D9, #CE7B91);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.gradient {
+  background-image: linear-gradient(#32CBFF, #D9D9D9, #CE7B91);
 }
 
 hr {
@@ -6654,6 +6661,7 @@ textarea.form-control-lg {
 
 .flex-grow-1 {
   flex-grow: 1 !important;
+  padding-left: 5%;
 }
 
 .flex-shrink-0 {
@@ -11116,6 +11124,20 @@ hr {
   justify-content: space-evenly;
 }
 
+/* FOR THE P TAGS */
+.center-text-paragraph {
+  text-align: center;
+  word-wrap: break-word;
+} 
+
+.expansion {
+  font-size: 1.8rem;
+}
+
+.minor-expansion {
+  font-size: 1.3rem;
+}
+
 .bs-info {
   background-color: var(--bs-info);
 }
@@ -11130,10 +11152,87 @@ hr {
   background-color: var(--bs-gray);
 }
 
+.bs-indigo {
+  background-color: var(--bs-indigo);
+}
+
 .bs-pink{
   background-color: var(--bs-pink);
 }
 
+.bs-green, .bs-success {
+  color: var(--bs-green)
+}
+
 .text-primary-pink {
   color: var(--bs-pink);
+}
+
+.dark-blue {
+  background-color: #00008B;
+}
+
+.acc-white {
+  background-color: #D9D9D9;
+}
+
+.footer-color {
+  background-color: #75DDDD;
+}
+
+.contrast-blue {
+  background-color: #5899E2;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  border-top: solid 5px var(--bs-dark);
+}
+
+.edu-icons {
+  opacity: 0;
+}
+
+.edu-button {
+  opacity: 0.2;
+  cursor: pointer;
+  background-color: transparent;
+  height: 2.5px;
+  width: 5px;
+  font-size: 1em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* for actual enclosed content, such as the index headers/links, and titles of pages */
+.content-container-3 {
+  text-align: center;
+  padding-top: 10%;
+  color: #2C2C34;
+}
+
+/* columns and rows for skills */
+/* Create two equal columns that floats next to each other */
+.skill-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.card-space {
+  justify-content: space-around;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+  .skill-column {
+    width: 100%;
+  }
 }
