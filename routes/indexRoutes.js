@@ -1,5 +1,5 @@
 const express = require('express');
-const {projectPage, resumePage, eduPage, newIndex, headstarterPage, expPage} = require('../controllers/indexCtrl');
+const {projectPage, resumePage, eduPage, newIndex, headstarterPage, expPage, bonusProject} = require('../controllers/indexCtrl');
 const router = express.Router();
 
 //ROUTES start with '/portfolio/'
@@ -15,5 +15,6 @@ router.get('/exp', expPage);
 // router.get('/skillz', skillPage);
 
 router.get('/headstarter', headstarterPage)
+router.get('/headstarter/006', bonusProject) //hardcoded route in headstarter.ejs
 
 module.exports = router;

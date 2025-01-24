@@ -12,6 +12,15 @@ const headstarterPage = async (request, response, next) => {
     }
 }
 
+const bonusProject = async (request, response, next) => {
+    try {
+        response.status(200).json({success: {message: "Bonus project page successful. This is where the project information will be. Keep in touch for more updates!"}, statusCode: 200});
+    } catch (error) {
+        response.status(400)
+            .json({ error: { message: "Something went wrong with getting to the resource!" }, statusCode: 400 });
+    }
+}
+
 const newIndex = async (request, response, next) => {
     try {
         await 
@@ -61,10 +70,10 @@ const expPage = async (request, response, next) => {
         response.status(400)
             .json({ error: { message: "Something went wrong with getting to the resource!" }, statusCode: 400 });
         }
-    };
+};
 
 
-module.exports = {projectPage, resumePage, eduPage, newIndex, headstarterPage, expPage};
+module.exports = {projectPage, resumePage, eduPage, newIndex, headstarterPage, expPage, bonusProject};
 
 // Deprecated due to consolidation - skills/exp/contact
 /*

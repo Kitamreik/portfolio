@@ -4033,6 +4033,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  
 }
 
 .navbar-nav-scroll {
@@ -4388,7 +4389,8 @@ textarea.form-control-lg {
 }
 
 .card-alt {
-  background-color: var(--bs-light)
+  background-image: linear-gradient(var(--bs-light), var(--bs-cyan));
+  word-wrap: break-word;
 }
 
 @media (min-width: 576px) {
@@ -11106,6 +11108,27 @@ hr {
   justify-content: space-between;
   transition: all 0.25s ease-in-out;
 }
+
+.link-styling-head {
+  padding: 0.75%;
+  color: var(--bs-gray-dark);
+}
+
+.link-styling-head a:link {
+  color: var(--bs-gray-dark);
+  text-decoration: none;
+}
+
+.link-styling-head a:visited {
+  color: var(--bs-white);
+  text-decoration: none;
+}
+
+.link-styling-head a:hover {
+  color: var(--bs-blue);
+  font-weight: bold;
+}
+
 
 .link-styling {
   padding: 0.75%;

@@ -4,26 +4,42 @@
 
 <div class="container-fluid p-0 project-background-alt">
     <section class="resume-section" id="projects">
-        <h2>Fellowship Projects</h2>
         <div class="resume-section-content-alt ">
+            <h2>Fellowship Projects</h2>
         <!-- start loop -->
         <% for (data of headstarter) { %>
             <div class="card-alt">
                 <a href="/portfolio/<%- data.id %>"></a>
-                <p>Name: <%- data.name%></p>
-                <p>Team Project Docket:
-                <a href="<%- data.docket %>" class="link-styling"><p><%- data.docket %></p></a>
-                <p>Demo:<a href="<%- data.demo %>" class="link-styling"><p><%- data.demo %></p></a>
-                <p>Youtube:<a href="<%- data.youtube %>" class="link-styling"><p><%- data.youtube %></p></a>
-                <p>Tech Stack: <%- data.technologies %></p>
-                <a href="<%- data.deployed %>" class="link-styling"><p><%- data.deployed %></p></a>
-                <a href="<%- data.github %>" class="link-styling"><p><%- data.github %></p></a>
+                <span>
+                    <p>Name: <%- data.name%></p>
+                    <p>Synopsis: <%- data.synopsis%></p>
+                    <p>Team Project Docket (if any):
+                    <a href="<%- data.docket %>" class="link-styling"><p><%- data.docket %></p></a>
+                    <p>Youtube (if any):<a href="<%- data.youtube %>" class="link-styling"><p><%- data.youtube %></p></a>
+                    <p> Team Presentation Demo (if any):<a href="<%- data.demo %>" class="link-styling"><p><%- data.demo %></p></a>
+                    <a href="<%- data.deployed %>" class="link-styling"><p><%- data.deployed %></p></a>
+                    <a href="<%- data.github %>" class="link-styling"><p><%- data.github %></p></a>
+                    <a href="<%- data.githubBE %>" class="link-styling"><p><%- data.githubBE %></p></a>
+                </span>
             </div>
             <!-- end loop -->
              <hr>
             <% } %>
-        <div class="card">test</div>
-        <br>
+            <div class="card-alt">
+                <!-- make sample and send JSON response when more links available -->
+                <a href="/portfolio/headstarter/006"><p>BONUS: How to Build a Back End with Convex, a Modern Backend-as-a-service </p></a>
+                    <p>Name: Kit Fenrir Amreik (they/she)</p>
+                    <p>Synopsis: This is a bonus solo project that is currently in development as of January 2025. This project will explore creating a Back End ecosystem with Convex.</p>
+                    <!-- <p>Project Docket:
+                        <a href="/" class="link-styling"><p>Link</p></a>
+                    </p> -->
+
+                    <!-- deployed link -->
+                    <!-- <a href="/" class="link-styling"><p>Link</p></a> -->
+
+                    <!-- github -->
+                    <!-- <a href="/" class="link-styling"><p>Link</p></a> -->
+            </div>
         </div>
     </section>
     <br>
