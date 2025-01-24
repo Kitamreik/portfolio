@@ -1,4 +1,16 @@
 const projectData = require('../data/new-data');
+const headstarterData = require('../data/headstarter-data');
+
+const headstarterPage = async (request, response, next) => {
+    try {
+        await response.render('pages/headstarter', {
+            headstarter: headstarterData
+        })
+    } catch (err) {
+        response.status(400)
+            .json({ error: { message: "Something went wrong with getting to the resource!" }, statusCode: 400 });
+    }
+}
 
 const newIndex = async (request, response, next) => {
     try {
@@ -41,8 +53,18 @@ const eduPage = async (request, response, next) => {
         }
 };
 
+const expPage = async (request, response, next) => {
+    try {
+        await 
+        response.render('pages/exp')
+        } catch (err) {
+        response.status(400)
+            .json({ error: { message: "Something went wrong with getting to the resource!" }, statusCode: 400 });
+        }
+    };
 
-module.exports = {projectPage, resumePage, eduPage, newIndex};
+
+module.exports = {projectPage, resumePage, eduPage, newIndex, headstarterPage, expPage};
 
 // Deprecated due to consolidation - skills/exp/contact
 /*
@@ -56,15 +78,6 @@ const contactPage = async (request, response, next) => {
         }
 };
 
-const expPage = async (request, response, next) => {
-try {
-    await 
-    response.render('pages/exp')
-    } catch (err) {
-    response.status(400)
-        .json({ error: { message: "Something went wrong with getting to the resource!" }, statusCode: 400 });
-    }
-};
 
 const skillPage = async (request, response, next) => {
     try {

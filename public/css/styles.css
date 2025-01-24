@@ -390,6 +390,7 @@ legend {
   font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
+
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
@@ -4385,6 +4386,11 @@ textarea.form-control-lg {
 .card-group > .card {
   margin-bottom: 0.75rem;
 }
+
+.card-alt {
+  background-color: var(--bs-light)
+}
+
 @media (min-width: 576px) {
   .card-group {
     display: flex;
@@ -10981,6 +10987,11 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+.resume-section-content-alt {
+  background-color: var(--bs-teal);
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -11043,6 +11054,17 @@ hr {
   background-size: cover;
   position: relative;
   background-color: var(--bs-black);
+  color: var(--bs-black);
+}
+
+.project-background-alt {
+  /* background-image: url("../img/headstarter.png"); */
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(var(--bs-green), var(--bs-cyan));
   color: var(--bs-black);
 }
 

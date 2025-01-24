@@ -1,0 +1,34 @@
+<%- include('../partials/head') -%> 
+    <title>Headstarter</title>
+<%- include('../partials/nav') -%> 
+
+<div class="container-fluid p-0 project-background-alt">
+    <section class="resume-section" id="projects">
+        <h2>Fellowship Projects</h2>
+        <div class="resume-section-content-alt ">
+        <!-- start loop -->
+        <% for (data of headstarter) { %>
+            <div class="card-alt">
+                <a href="/portfolio/<%- data.id %>"></a>
+                <p>Name: <%- data.name%></p>
+                <p>Team Project Docket:
+                <a href="<%- data.docket %>" class="link-styling"><p><%- data.docket %></p></a>
+                <p>Demo:<a href="<%- data.demo %>" class="link-styling"><p><%- data.demo %></p></a>
+                <p>Youtube:<a href="<%- data.youtube %>" class="link-styling"><p><%- data.youtube %></p></a>
+                <p>Tech Stack: <%- data.technologies %></p>
+                <a href="<%- data.deployed %>" class="link-styling"><p><%- data.deployed %></p></a>
+                <a href="<%- data.github %>" class="link-styling"><p><%- data.github %></p></a>
+            </div>
+            <!-- end loop -->
+             <hr>
+            <% } %>
+        <div class="card">test</div>
+        <br>
+        </div>
+    </section>
+    <br>
+    <br>
+</div>
+
+<hr class="m-0" />
+<%- include('../partials/footer') -%> 
