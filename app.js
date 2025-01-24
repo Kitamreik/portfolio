@@ -73,5 +73,5 @@ app.get('/portfolio/10', (request, response, next) => {
 app.listen(PORT, () => {
     console.log(`The server is listening on port ${PORT}`);
     console.log(`http://localhost:${PORT}/`)
-    console.log(`Google Analytics:`);
+    console.log(`Google Analytics: https://analytics.google.com/analytics/web/?utm_source=OGB&utm_medium=app&authuser=0#/p422492576/reports/intelligenthome?params=_u..nav%3Dmaui`);
 });

@@ -99,10 +99,19 @@ const upgrade = [
         deployed: "",
         github: "https://github.com/Kitamreik/wesley-toma-test"
     },
+    {
+        id: 10,
+        title: "Flashcard SAAS",
+        author: "Kit Fenrir Amreik (they/she)",
+        audience: "general",
+        reason: "This is an example of using Next.js, Clerk, Firebase and AI models to emulate a landing page and a project as part of the Headstarter AI Fellowship.", 
+        technologies: "HTML/CSS, Javascript",
+        deployed: "",
+        github: "https://github.com/Kitamreik/flashcard-saas"
+    },
 
     //hard coded entry
     //  {
-    //     id: 10,
     //     title: "Complete Node Podcast",
     //     author: "Kit Fenrir Amreik (they/she)",
     //     audience: "students/self-learning and development",
