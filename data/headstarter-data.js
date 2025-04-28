@@ -54,17 +54,17 @@ const headstarter = [
         github: "https://github.com/Kitamreik/ecocycle-test",
         // githubBE: ""
     },
-    // {
-    //     id: #,
-    //     name: "",
-    //     synopsis: "",
-    //     docket: "",
-    //     demo: "",
-    //     youtube: "", 
-    //     deployed: "",
-    //     github: "",
-    //     githubBE: ""
-    // },
+    {
+        id: 6,
+        name: "Somatic Serenity (Solo Project)",
+        synopsis: "This project is a task generation and management application that allows users to keep track of entries by adding or removing items manually or via OpenAI calls. The project uses Next.js as the frontend framework, Tailwind CSS for the UI components, and Convex as the backend service.",
+        //docket: "",
+        //demo: "",
+        //youtube: "", 
+        deployed: "https://somatic-serenity.vercel.app/",
+        github: "https://github.com/Kitamreik/convex-dev",
+        //githubBE: ""
+    },
 
     
     //template
